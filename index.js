@@ -129,8 +129,13 @@ return arr
       for(let key in object){res.push(object[key])}
       return res
     },
-    functions: function() {
-
+    functions: function(obj) {
+     let val=[]
+      for(let ele in obj){
+        if(typeof obj[elei]=='function'){
+          val.push(i)}
+      }
+      return val
     },
 
 
