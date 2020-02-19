@@ -34,9 +34,9 @@ const fi = (function() {
         if(predicate[element]) {
           return element
           
-      }
+      }}
       return undefined 
-    }},
+    },
     filter : function(collection, predicate){
       let arr = []
       for (let element in collection){
