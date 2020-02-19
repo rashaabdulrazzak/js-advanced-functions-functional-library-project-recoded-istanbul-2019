@@ -77,9 +77,14 @@ const fi = (function() {
       return arr.sort(function(a, b){ return callback(a)-callback(b) })
     },
     flatten :function(array,bol){
-      let result = []
-      if(bol=== true) {return  [].concat(...array) }
-      else {return array.prototype.flat(Infinity)}
+     // let result = []
+     // if(bol=== true) {return  [].concat(...array) }
+      //else {return array.prototype.flat(Infinity)}
+      function flatDeep(arr, d = 1) {
+       return d > 0 ? arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val), [])
+                    : arr.slice();
+    };
+
     },
     uniq : function(array, isSorted, callback){
       if(!isSorted && callback){
