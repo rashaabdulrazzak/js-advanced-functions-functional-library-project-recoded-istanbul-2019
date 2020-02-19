@@ -24,7 +24,7 @@ const fi = (function() {
           if(acc===undefined)
           {acc=array[element]}
           else{
-            acc=fun(acc,array[element],array)}
+            acc=func(acc,array[element],array)}
         }
         return acc
     },
