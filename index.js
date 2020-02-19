@@ -132,7 +132,7 @@ return arr
     functions: function(obj) {
      let res=[]
       for(let ele in obj){
-        if(typeof obj[elei]=='function'){
+        if(typeof obj[ele]=='function'){
           res.push(ele)}
       }
       return res
