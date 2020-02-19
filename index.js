@@ -29,8 +29,8 @@ const fi = (function() {
         return acc
     },
     find : function(collection, predicate){
-      for(let i=0;i< array.length;i++){
-      if(predicate(array[i] ) ) return array[i]   
+      for( let ele of array ){
+      if(predicate(ele ) ) return ele  
       }
       return undefined 
     },
