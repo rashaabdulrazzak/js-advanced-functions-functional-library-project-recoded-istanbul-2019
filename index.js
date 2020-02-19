@@ -120,7 +120,10 @@ return arr
       }
       
     },
-    keys:function(objects){},
+    keys:function(object){
+      let a = []
+      
+    },
     functions: function() {
 
     },
