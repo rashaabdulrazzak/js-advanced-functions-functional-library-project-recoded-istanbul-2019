@@ -87,11 +87,10 @@ const fi = (function() {
   let arr1 = []
 
 for (let i=0;i< array.length;i++){
-debugger 
    if(!arr1.includes(callback(array[i]))) {
-arr.push(array[i])
-arr1.push(callback(array[i]))
-   
+    arr.push(array[i])
+    arr1.push(callback(array[i]))
+       
   
 }}
 return arr  
