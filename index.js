@@ -133,7 +133,7 @@ return arr
      let val=[]
       for(let ele in obj){
         if(typeof obj[elei]=='function'){
-          val.push(i)}
+          val.push(ele)}
       }
       return val
     },
