@@ -37,7 +37,7 @@ const fi = (function() {
     },
     filter : function(collection, predicate){
       let arr = []
-      for (let element in collection){
+      for (let element of collection){
         if(predicate[element]) arr.push(element)
       }
       return arr 
