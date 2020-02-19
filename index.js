@@ -79,7 +79,7 @@ const fi = (function() {
     flatten :function(array,bol){
       let result = []
       if(bol=== true) {return  [].concat(...array) }
-      else {return array.flat(Infinity)}
+      else {return array.prototype.flat(Infinity)}
     },
     uniq : function(array, isSorted, callback){
       if(!isSorted && callback){
