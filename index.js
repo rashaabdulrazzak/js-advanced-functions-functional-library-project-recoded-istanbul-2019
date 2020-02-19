@@ -121,7 +121,7 @@ return arr
       
     },
     keys:function(object){
-     Object.keys(obj)
+     Object.keys(object)
       
     },
     functions: function() {
