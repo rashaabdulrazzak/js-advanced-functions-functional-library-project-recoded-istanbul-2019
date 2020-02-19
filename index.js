@@ -87,7 +87,7 @@ const fi = (function() {
       if(isSorted && callback){}
       else if(isSorted){
         let res = [] 
-        for (let i = 0 ; i<array.length -1 ; i++){
+        for (let i = 0 ; i<array.length ; i++){
           if(array[i] !== array[i+1]) res.push(array[i])
         }
         return res 
