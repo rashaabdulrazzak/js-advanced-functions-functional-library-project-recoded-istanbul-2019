@@ -126,7 +126,7 @@ return arr
     },
     values:function(object){
       let res=[]
-      for(let key in object){res.push(object[i])}
+      for(let key in object){res.push(object[key])}
       return res
     },
     functions: function() {
