@@ -84,7 +84,13 @@ const fi = (function() {
      else    return array.flat(Infinity)
     },
     uniq : function(array, isSorted, callback){
-      if(isSorted && callback){}
+      if(isSorted && callback){
+        let res = [] 
+        for (let i = 0 ; i<array.length ; i++){
+          if(callback(array[i]) !== callback(array[i+1])) res.push(array[i])
+        }
+        return res 
+      }
       else if(isSorted){
         let res = [] 
         for (let i = 0 ; i<array.length ; i++){
