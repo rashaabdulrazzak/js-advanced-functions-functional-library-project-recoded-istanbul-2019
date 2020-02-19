@@ -85,7 +85,18 @@ const fi = (function() {
     },
     uniq : function(array, isSorted, callback){
       if(!isSorted && callback){
-        return array.filter(callback) 
+         let arr =[]
+  let arr1 = []
+
+for (let i=0;i< array.length;i++){
+debugger 
+   if(!arr1.includes(callback(array[i]))) {
+arr.push(array[i])
+arr1.push(callback(array[i]))
+   
+  
+}}
+return arr  
       }
       else if(isSorted){
         let res = [] 
