@@ -90,8 +90,6 @@ for (let i=0;i< array.length;i++){
    if(!arr1.includes(callback(array[i]))) {
     arr.push(array[i])
     arr1.push(callback(array[i]))
-       
-  
 }}
 return arr  
       }
