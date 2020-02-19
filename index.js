@@ -85,7 +85,7 @@ const fi = (function() {
     },
     uniq : function(array, isSorted, callback){
       if(isSorted && callback){
-        return array.filter() 
+        return array.filter(callback) 
       }
       else if(isSorted){
         let res = [] 
