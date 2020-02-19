@@ -84,7 +84,7 @@ const fi = (function() {
      else    return array.flat(Infinity)
     },
     uniq : function(array, isSorted, callback){
-      if(isSorted && callback){
+      if(!isSorted && callback){
         return array.filter(callback) 
       }
       else if(isSorted){
