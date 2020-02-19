@@ -124,6 +124,9 @@ return arr
      Object.keys(object)
       
     },
+    values:function(object){
+      
+    },
     functions: function() {
 
     },
