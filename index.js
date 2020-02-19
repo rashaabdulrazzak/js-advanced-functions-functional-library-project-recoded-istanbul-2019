@@ -130,12 +130,12 @@ return arr
       return res
     },
     functions: function(obj) {
-     let val=[]
+     let res=[]
       for(let ele in obj){
         if(typeof obj[elei]=='function'){
           val.push(ele)}
       }
-      return val
+      return res
     },
 
 
