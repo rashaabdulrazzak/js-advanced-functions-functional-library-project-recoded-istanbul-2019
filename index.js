@@ -38,7 +38,7 @@ const fi = (function() {
     filter : function(array, predicate){
       let arr = []
       for (let element of array){
-        if(predicate[element]) arr.push(element)
+        if(predicate(element)) arr.push(element)
       }
       return arr 
     },
