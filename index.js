@@ -29,13 +29,11 @@ const fi = (function() {
         return acc
     },
     find : function(collection, predicate){
-      let result = '' 
-      for (let element of collection){
-        if(predicate[element]) {
-          return element
-          
-      }}
-      return undefined 
+      let result = []
+      result = collection.filter(predicate)
+      if(result.length !== 0 ) return result[0]   
+      
+      else  return undefined  
     },
     filter : function(collection, predicate){
       let arr = []
