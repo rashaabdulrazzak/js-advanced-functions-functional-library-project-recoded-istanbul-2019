@@ -83,9 +83,9 @@ const fi = (function() {
       function flatDeep(arr, d = 1) {
        return d > 0 ? arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val), [])
                     : arr.slice();
-    };
+    }
     if(bol=== true) return flatDeep(array, d = 1)
-    else return 
+    else return flatDeep(array, Infinity)
 
     },
     uniq : function(array, isSorted, callback){
